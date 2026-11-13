@@ -11,7 +11,7 @@ This project focused on developing practical cybersecurity skills in footprintin
 
 ## Task 1- Domain Registration Information Gathering Using WHOIS 
 
-### Command used 
+### Command 
 ```txt
 whois networkwalks.com
 ```
@@ -24,7 +24,7 @@ WHOIS is used to gather domain registration details, including the registrar, re
 
 ## Task 2- Web Technology Identification Using WhatWeb
 
-### Command used
+### Command
 ```txt
 whatweb networkwalks.com
 ```
@@ -78,13 +78,25 @@ Used to enumerate DNS records and gather information about a domain's DNS infras
 <img width="912" height="634" alt="Screenshot 2026-11-09 152526" src="https://github.com/user-attachments/assets/e3c6b502-e694-4be7-af1b-6a06fd42b393" />
 
 
-# Module 2 (WK2-PM2): Footprinting with Google Hacking Database (GHDB)
+## WK2-PM1- Findings Summary
 
+Here is a more professional and well-structured version for your project documentation:
 
-## Task 1: Identifying Publicly Exposed Security Cameras Using Google Dorking
-### Purpose 
-To understand how Google Dorking can identify publicly exposed security cameras and assess potential security risks associated with internet-accessible devices.
+| Task | Tool Used | Objective                                      | Findings                                                                      |
+| -------- | ------------- | -------------------------------------------------- | ------------------------------------------------------------------------------------------- |
+| 1        | WHOIS         | Gather domain registration information.            | GoDaddy identified as the registrar, HostGator name servers found, and DNSSEC was unsigned. |
+| 2        | WhatWeb       | Identify technologies used by the website.         | Apache, WordPress, WordPress Download Manager, jQuery, and Bootstrap were detected.         |
+| 3        | NSLookup      | Resolve the domain name to its IP address.         | `networkwalks.com` resolved to `192.232.216.135`.                                           |
+| 4        | cURL          | Examine HTTP response headers.                     | Apache, HTTP/2, and WordPress-related information were identified.                          |
+| 5        | WAFW00F       | Detect the presence of a Web Application Firewall. | ModSecurity (SpiderLabs) was detected.                                                      |
+| 6        | DNSRecon      | Enumerate the domain's DNS records.                | SOA, NS, A, MX, TXT, and SRV records were identified.                                       |
 
+Note: The findings are based on the results obtained during the footprinting exercises.
+
+## Security and Ethical Consideration 
+
+All reconnaissance activities carried out in this project were conducted as part of the authorized NetworkWalks cybersecurity training program. The information gathered was used solely for educational purposes and to develop practical cybersecurity skills.
+All reconnaissance and security testing activities should be performed only on systems for which proper authorization has been granted.
 
 
 # Module 4 (WK2-PM4): Footprinting with theHarvester 
@@ -154,17 +166,39 @@ Total IP address scanned: 256
 Live host discovered: 2
 ```
 
-## Task 5: IP Addresses of Live Host 
+## Task 5: IP Addresses of Live Hosts  
 
 The following ip address was discovered:
 | IP Address      | Status   |
+|-----------------|----------|
 | 10.110.235.56   | Up       |
 | 10.110.235.201  | Up       |
 
+## Task 6: MAC Addresses of Live Hosts
+
+Nmap discovered the MAC address for 10.110.235.56.
+|IP Adress         | MAC Address       |
+|------------------|-------------------|
+| 10.110.235.56    | CA:1D:A7:F0:AD:05 |
+| 10.110.235.201   | Not displayed     |
+
+## Task 7: Zenmap Topology
+
+Zenmap's Topology view was used to display the discovered hosts and their network connections.
+The topology diagram was then exported as a PDF for documentation.
+### Evidence 
+<img width="1879" height="938" alt="Screenshot 2026-11-12 025014" src="https://github.com/user-attachments/assets/10a5ddf0-fb6c-4a71-a4e5-ade883003e7d" />
+
+## Security and Ethical Consideration
+
+The network scanning exercise was conducted within the authorized NetworkWalks training environment for educational purposes and to gain practical experience in network discovery and analysis.
+All network scanning activities should be restricted to systems and networks for which proper authorization has been granted.
 
 
+# Author 
 
-
+Name: Yusuf Fatimah Itunuoluwa 
+Program: Networkwalks Cybersecurity Internship
 
 
 
